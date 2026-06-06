@@ -1,0 +1,24 @@
+steps .
+
+bigint(size_t n) : num(std::to_string(n)) {}
+bigint() : num("0") {}
+bigint(const bigint& oth) : num(oth.num) {}
+bigint(const std::string& n)
+
+friend std::ostream& operator<<(std::ostream& os, bigint& n)
+
+std::string add_str(const std::string& s1, const std::string& s2) const
+
+bigint operator+(const bigint& oth) const
+bigint& operator+=(const bigint& oth)
+bigint& operator++()
+bigint operator++(int)
+bigint operator<<(size_t shift) const
+bigint& operator<<=(size_t shift)
+bigint& operator>>=(const bigint& b)
+
+6x  bool operator| |(const bigint& oth) const
+bool op< > == != <= >= - () const
+
+//exam case
+bigint operator-(const bigint& oth) const
