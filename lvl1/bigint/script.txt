@@ -16,9 +16,7 @@ bigint operator++(int)
 bigint operator<<(size_t shift) const
 bigint& operator<<=(size_t shift)
 bigint& operator>>=(const bigint& b)
+bigint operator-(const bigint& oth) const
 
 6x  bool operator| |(const bigint& oth) const
 bool op< > == != <= >= - () const
-
-//exam case
-bigint operator-(const bigint& oth) const
